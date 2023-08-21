@@ -9,7 +9,7 @@ const SearchForm = () => {
   const searchText = useRef('');
   const navigate = useNavigate();
 
-  useEffect(() => searchText.current.focus(), []);
+  useEffect(() =>searchText.current.focus(), []);
   const handleSubmit = (e) => {
     e.preventDefault();
     let tempSearchTerm = searchText.current.value.trim();
